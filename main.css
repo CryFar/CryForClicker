@@ -4,6 +4,7 @@
 }
 body {
     box-sizing: border-box;
+    background: #363636;
 }
 header {
     position: relative;
@@ -15,6 +16,21 @@ header {
     padding: 15px;
     text-align: center;
     float: left;
+}
+button {
+    background: #464646;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #565656;
 }
 main {
     position: relative;
@@ -39,14 +55,18 @@ main .clicker #clicker {
     color: white;
     border: 0;
     border-radius: 5px;
+    font-size: 40px;
     position: relative;
     display: block;
-    padding: 50px;
+    padding: 40px;
     margin: 5%;
     width: 90%;
 }
 main .clicker #clicker:hover {
     background: #565656;
+}
+main .clicker ul {
+    list-style: none;
 }
 main .upgrades {
     position: relative;
@@ -58,36 +78,15 @@ main .upgrades {
     float: left;
     padding: 15px;
 }
-main .upgrades ul li {
-    list-style: none;
-    background: #464646;
-    border: 0;
-    border-radius: 5px;
+main .upgrades .IdleUpgrades {
     position: relative;
-    display: block;
-    height: 50px;
+    box-sizing: border-box;
     margin: 10px;
 }
-main .upgrades ul li p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-main .upgrades ul li button {
-    position: absolute;
-    background: transparent;
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    width: 100%;
-    height: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-main .upgrades ul li button:hover {
-    background: #565656;
+main .upgrades .ClickerUpgrades {
+    position: relative;
+    box-sizing: border-box;
+    margin: 10px;
 }
 footer {
     position: relative;
