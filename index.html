@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>CryForClicker</title>
+        <link rel="shortcut icon" type="image/png" href="Images/favicon.ico"/>
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
@@ -13,41 +14,68 @@
         </header>
         <main>
             <div class="clicker">
-                <h1 class="Wood" id="Wood">Wood: 25</h1>
+                <h1 class="Wood" id="Wood">
+                    <div>
+                        <img src="Images/wood.png" alt="wood">
+                    </div>
+                    25
+                </h1>
                 <span id="Tutorial">Dont Forget to Get Your first upgrade before start</span>
                 <button id="clicker" onclick="plusWood()">Click +1 Wood</button>
                 <h2>Bought Upgrades</h2>
                 <h3>Clicker Upgrades</h3>
                 <ul>
                     <li id="UpgradeCounter1">Upgrade 1: <b>0</b></li>
-                    <li id="UpgradeCountet2">Upgrade 2: <b>0</b></li>
+                    <li id="UpgradeCounter2">Upgrade 2: <b>0</b></li>
                     <li id="UpgradeCounter3">Upgrade 3: <b>0</b></li>
+                    <li id="UpgradeCounter4">Upgrade 4: <b>0</b></li>
                 </ul>
                 <h4>Idle Upgrades</h4>
                 <ul>
                     <li id="IdleUpgradeCounter1">Upgrade 1: <b>0</b></li>
                     <li id="IdleUpgradeCounter2">Upgrade 2: <b>0</b></li>
                     <li id="IdleUpgradeCounter3">Upgrade 3: <b>0</b></li>
+                    <li id="IdleUpgradeCounter4">Upgrade 3: <b>0</b></li>
                 </ul>
             </div>
             <div class="upgrades">
                 <div class="ClickUpgrades">
                     <h2>Click Upgrades</h2>
-                    <button id="clickUpgrade1" onclick="">+1 to Click</button>
-                    <p><i>25 Wood</i></p>
-                    <button id="clickUpgrade2" onclick="">+10 to Click</button>
-                    <p><i>250 Wood</i></p>
-                    <button id="clickUpgrade3" onclick="">+100 to Click</button>
-                    <p><i>2500 Wood</i></p>
+                    <div>
+                        <button id="clickUpgrade1" onclick="">+1 to Click</button>
+                        <p><i>25 Wood</i></p>
+                    </div>
+                    <div>
+                        <button id="clickUpgrade2" onclick="">+10 to Click</button>
+                        <p><i>250 Wood</i></p>
+                    </div>
+                    <div>
+                        <button id="clickUpgrade3" onclick="">+100 to Click</button>
+                        <p><i>2500 Wood</i></p>
+                    </div>
+                    <div>
+                        <button id="clickUpgrade4" onclick="">+1000 to Click</button>
+                        <p><i>25000 Wood</i></p>
+                    </div>
                 </div>
                 <div class="IdleUpgrades">
                     <h2>Idle Upgrades</h2>
-                    <button id="idleUpgrade1" onclick="">+1 Wood/s</button>
+                    <div>
+                        <button id="idleUpgrade1" onclick="">+1 Wood/s</button>
                     <p><i>50 Wood</i></p>
-                    <button id="idleUpgrade2" onclick="">+10 Wood/s</button>
+                    </div>
+                    <div>
+                        <button id="idleUpgrade2" onclick="">+10 Wood/s</button>
                     <p><i>500 Wood</i></p>
-                    <button id="idleUpgrade3" onclick="">+100 Wood/s</button>
-                    <p><i>5000 Wood</i></p>
+                    </div>
+                    <div>
+                        <button id="idleUpgrade3" onclick="">+100 Wood/s</button>
+                        <p><i>5000 Wood</i></p>
+                    </div>
+                    <div>
+                        <button id="idleUpgrade4" onclick="">+1000 Wood/s</button>
+                        <p><i>50000 Wood</i></p>
+                    </div>
                 </div>
             </div>
         </main>

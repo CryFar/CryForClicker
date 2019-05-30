@@ -3,34 +3,34 @@
     padding: 0;
 }
 body {
-    box-sizing: border-box;
-    background: #363636;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: white;
 }
 header {
-    position: relative;
+    position: absolute;
     box-sizing: border-box;
     width: 100%;
     height: 10%;
-    background: #363636;
-    color: white;
+    background: transparent;
     padding: 15px;
     text-align: center;
-    float: left;
+    z-index: 10;
+    animation: top-to-bottom 2s;
 }
 button {
-    background: #464646;
+    background: linear-gradient(orange, purple);
     color: white;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 20px;
     position: relative;
     display: inline-block;
     padding: 5px;
-    margin: 5px;
     cursor: pointer;
-}
-button:hover {
-    background: #565656;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all .5s;
 }
 main {
     position: relative;
@@ -38,23 +38,27 @@ main {
     height: 80%;
     width: 100%;
     text-align: center;
+    padding-top: 75px;
     float: left;
+    overflow: hidden;
 }
 main .clicker {
     position: relative;
     box-sizing: border-box;
+    border-radius: 10px;
+    background: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);    
     height: 100%;
-    width: 70%;
-    background: #161616;
-    color: white;
+    color: black;
+    width: 45%;
     float: left;
     padding: 15px;
+    margin: 20px;
+    animation: left-to-right 2s;
 }
 main .clicker #clicker {
-    background: #464646;
     color: white;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 40px;
     position: relative;
     display: block;
@@ -63,29 +67,53 @@ main .clicker #clicker {
     width: 90%;
 }
 main .clicker #clicker:hover {
-    background: #565656;
+    transform: scale(1.1);
 }
 main .clicker ul {
     list-style: none;
 }
+main .clicker ul li b {
+    color: white;
+}
+main .clicker h1 {
+    font-size: 50px;
+}
+main .clicker h1 div {
+    height: 50px;
+}
+main .clicker h1 div img {
+    height: 100%;
+    width: auto;
+}
 main .upgrades {
     position: relative;
     box-sizing: border-box;
+    border-radius: 10px;
+    background: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    color: black;   
     height: 100%;
-    width: 30%;
-    background: #262626;
-    color: white;
-    float: left;
+    width: 45%;
+    float: right;
     padding: 15px;
+    margin: 20px;
+    animation: right-to-left 2s;
 }
 main .upgrades .IdleUpgrades {
-    position: relative;
-    box-sizing: border-box;
     margin: 10px;
 }
-main .upgrades .ClickerUpgrades {
-    position: relative;
-    box-sizing: border-box;
+main .upgrades .IdleUpgrades div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+main .upgrades .ClickUpgrades {
+    margin: 10px;
+}
+main .upgrades .ClickUpgrades div {
+    display: inline-block;
+    width: 90px;
+    height: 100px;
     margin: 10px;
 }
 footer {
@@ -93,17 +121,72 @@ footer {
     box-sizing: border-box;
     width: 100%;
     height: 10%;
-    background: #363636;
-    color: white;
     padding: 15px;
-    float: left;
     text-align: center;
+    z-index: 10;
+    float: left;
+    animation: bottom-to-top 2s;
 }
 @media (max-width: 768px) {
+    body {
+        background: linear-gradient( #6a11cb 0%, #2575fc 100%);
+    }
     main .clicker {
         width: 100%;
+        animation: bottom-to-top 2s;
+        float: left;
+        margin: 0;
     }
     main .upgrades {
         width: 100%;
+        animation: bottom-to-top 2s;
+        float: left;
+        margin: 0;
+    }
+    main .clicker #clicker:hover {
+        transform: scale(1);
+    }
+    footer {
+        animation: bottom-to-top 2s;
+    }
+}
+@keyframes top-to-bottom {
+    0% {
+        top: -200px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+@keyframes bottom-to-top {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+@keyframes left-to-right {
+    0% {
+        left: -200px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes right-to-left {
+    0% {
+        right: -200px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
     }
 }
