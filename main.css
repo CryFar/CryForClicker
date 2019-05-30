@@ -17,7 +17,7 @@ header {
     padding: 15px;
     text-align: center;
     z-index: 10;
-    animation: top-to-bottom 2s;
+    animation: top-to-bottom 2s ease;
 }
 button {
     background: linear-gradient(orange, purple);
@@ -53,7 +53,7 @@ main .clicker {
     float: left;
     padding: 15px;
     margin: 20px;
-    animation: left-to-right 2s;
+    animation: left-to-right 2s ease;
 }
 main .clicker #clicker {
     color: white;
@@ -96,7 +96,7 @@ main .upgrades {
     float: right;
     padding: 15px;
     margin: 20px;
-    animation: right-to-left 2s;
+    animation: right-to-left 2s ease;
 }
 main .upgrades .IdleUpgrades {
     margin: 10px;
@@ -125,7 +125,7 @@ footer {
     text-align: center;
     z-index: 10;
     float: left;
-    animation: bottom-to-top 2s;
+    animation: bottom-to-top 2s ease;
 }
 @media (max-width: 768px) {
     body {
@@ -133,13 +133,13 @@ footer {
     }
     main .clicker {
         width: 100%;
-        animation: bottom-to-top 2s;
+        animation: bottom-to-top 2s ease;
         float: left;
         margin: 0;
     }
     main .upgrades {
         width: 100%;
-        animation: bottom-to-top 2s;
+        animation: bottom-to-top 2s ease;
         float: left;
         margin: 0;
     }
@@ -147,7 +147,7 @@ footer {
         transform: scale(1);
     }
     footer {
-        animation: bottom-to-top 2s;
+        animation: bottom-to-top 2s ease;
     }
 }
 @keyframes top-to-bottom {
