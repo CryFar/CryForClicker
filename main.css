@@ -5,7 +5,7 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
-    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    background: black;
     color: white;
 }
 header {
@@ -67,7 +67,7 @@ main .clicker #clicker {
     width: 90%;
 }
 main .clicker #clicker:hover {
-    transform: scale(1.1);
+    transform: translate(0, -5px);
 }
 main .clicker ul {
     list-style: none;
@@ -134,7 +134,7 @@ footer {
 }
 @media (max-width: 768px) {
     body {
-        background: linear-gradient( #6a11cb 0%, #2575fc 100%);
+        background: red;
     }
     main .clicker {
         width: 100%;
